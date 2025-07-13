@@ -1,0 +1,18 @@
+ Use DBML to define your database structure
+ Docs httpsdbml.dbdiagram.iodocs
+
+
+
+
+Table foods{
+  id integer [primary key]
+  foodname varchar [not null, unique, note '食べ物の名前']
+  calorie integer [note 'カロリー']
+  protein integer [note 'タンパク質']
+  fat itneger [note '脂質']
+  carbo integer [note '炭水化物']
+  created_date timestamp [not null, note 'データ作成日']
+  quantity integer [note '規定量']
+}
+
+
